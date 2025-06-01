@@ -3,6 +3,21 @@
 This repository is meant to be a template of how i work with my Flask applications, using my own database and user managers. 
 The structure proposed here ensures that any complex app can be created through specific modules that can be implemented in the `web_server/server.py` file the same way `data_m` and `user_m` modules are
 
+In order to run the app, execute this:
+```bash
+cd web_server
+python3 main.py
+```
+
+sample API call:
+> This endpoint does not require authentication or a request body.
+```bash
+curl -X POST http://localhost:5000/api/check \
+     -H "Content-Type: application/json"
+```
+
+Documentation on how the structure and code works is right bellow
+
 ## Server
 
 We have 3 different files:
