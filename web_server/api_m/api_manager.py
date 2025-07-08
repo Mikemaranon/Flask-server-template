@@ -19,7 +19,7 @@ class ApiManager:
 
     def _register_APIs(self):
         self.app.add_url_rule("/api/check", "check", self.API_check, methods=["GET"])
-        self.app.add_url_rule("/api/register", "check", self.API_register, methods=["POST"])
+        self.app.add_url_rule("/api/register", "register", self.API_register, methods=["POST"])
     
     # =========================================
     #       API protocols start from here
